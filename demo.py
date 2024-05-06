@@ -51,26 +51,6 @@ def init_folders():
     os.makedirs(f'{config["OUTPUT_DIR"]}/tmp/stretched', exist_ok=True)
     os.makedirs(f'{config["OUTPUT_DIR"]}/tts', exist_ok=True)
 
-
-# Check if output directory exists and ask user if they want to overwrite it
-# def check_output_dir():
-#     if os.path.exists(config['OUTPUT_DIR']):
-#         # if output directory does not have any files recursively, return
-#         if not any([len(files) for _, _, files in os.walk(config['OUTPUT_DIR'])]):
-#             return
-#         overwrite = input("Output directory exists. Do you want to overwrite it? (y/n): ")
-#         if overwrite.lower() == 'y':
-#             print("Removing existing output directory...")
-#             # use os.remove for files and os.rmdir for directories
-#             for root, dirs, files in os.walk(config['OUTPUT_DIR'], topdown=False):
-#                 for name in files:
-#                     os.remove(os.path.join(root, name))
-#                 for name in dirs:
-#                     os.rmdir(os.path.join(root, name))
-#         else:
-#             print("Exiting...")
-#             exit()
-
 # Initialize whisper model
 def init_whisper_model():
     print(f"Using device: {device}")
