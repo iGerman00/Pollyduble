@@ -5,16 +5,18 @@
 <p align="center">
   <img src="assets/polly.png" alt="Polly the Tadpole" width="200"/>
 </p>
-This is a highly experimental prototype of a script that aims to automatically dub English audio over a video file originally recorded in any language Whisper supports. 
+This is a highly experimental prototype of a script that aims to automatically dub English audio over a video file originally recorded in any language Whisper supports.  
 Theoretically, with some modifications and different OpenVoice models, it should support any language supported by OpenVoice, however the translation would have to be handled by something other than Whisper
 
-The features include:
+## Features
 - Voice cloning and local text-to-speech synthesis
 - Automatic speech recognition
 - Audio separation
 - Automatic synchronization of dubbed lines to the original speech
 - Optional voice fixing to bring back some high frequencies lost during the voice cloning process
 - Muxing the dubbed audio and extracted instrumental track back into the video
+
+--- 
 
 PRs are welcome, this is mostly just a proof-of-concept. Some good ideas for improvement include:
 - Speaker diarization to separate the speech of different characters and automatically assign the correct dubbed lines to the correct characters
@@ -35,8 +37,8 @@ PRs are welcome, this is mostly just a proof-of-concept. Some good ideas for imp
 
 1. Make a new directory and clone this repository:
 ```bash
-git clone <LINK>
-cd <REPO>
+git clone https://github.com/igerman00/Pollyduble
+cd Pollyduble
 ```
 
 2. Create a new Conda environment:
