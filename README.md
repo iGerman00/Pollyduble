@@ -65,7 +65,7 @@ pip install git+https://github.com/myshell-ai/MeloTTS.git
 python -m unidic download
 ```
 
-6. Install `torch` for GPU support (should be optional):
+6. Install `torch` with GPU support (the index-url parameter should be optional for no GPU support):
 ```bash
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
